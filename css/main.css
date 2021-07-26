@@ -2913,12 +2913,30 @@ footer h4.h05::after {
   bottom: 0;
   left: 0;
 }
+.footer-subheading {
+  font-size: 2rem;
+}
 
 /* footer main
  * --------------------------------- */
 .footer-main {
   padding-top: 9.6rem;
   padding-bottom: 3rem;
+}
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 0 2fr 1fr;
+  grid-gap: 1rem;
+}
+.grid-content {  
+  font-size: 2.4rem;
+  line-height: 2;
+}
+.footer-grid-content-1 {
+  margin-left: 5rem;
+}
+.footer-main .row .tab-full {
+  width: fit-content;
 }
 .footer-main ul {
   font-size: 1.5rem;
@@ -3088,6 +3106,13 @@ footer h4.h05::after {
   }
   .footer-main [class*="col-"] {
     margin-bottom: 3.6rem;
+  }
+  .footer-grid-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .grid-content {    
+    margin: auto;
   }
 
   footer h4.h05 {
