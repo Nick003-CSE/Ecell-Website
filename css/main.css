@@ -505,7 +505,7 @@ td:last-child {
 }
 
 .pace .pace-progress {
-  background: #f9a828;
+  background: #03C4EB;
   position: fixed;
   z-index: 900;
   top: 0;
@@ -544,7 +544,7 @@ td:last-child {
   margin-left: -30px;
   margin-top: -30px;
   padding: 0;
-  background-color: #ffa81d;
+  background-color: #03C4EB;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1s infinite ease-in-out;
   animation: sk-scaleout 1s infinite ease-in-out;
@@ -1304,8 +1304,8 @@ header .header-logo a {
   border: none;
   width: 80px;
   height: 50px;
-  background: url("../images/logo.png") no-repeat center;
-  background-size: 60px 50px;
+  background: url("../images/our-logo.png") no-repeat center;
+  background-size: 80px 50px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1392,8 +1392,8 @@ header .header-logo a {
  * off-canvas menu - (_layout.scss) 
  * ------------------------------------------------------------------- */
 #menu-nav-wrap {
-  background: #0c0c0c;
-  color: rgba(255, 255, 255, 0.25);
+  background: #010C1E;
+  color: rgba(255, 255, 255, 0.815);
   font-size: 1.5rem;
   line-height: 1.6;
   padding: 3.6rem 3rem;
@@ -1453,7 +1453,7 @@ header .header-logo a {
 }
 #menu-nav-wrap .nav-list li a:hover,
 #menu-nav-wrap .nav-list li a:focus {
-  color: white;
+  color: #FFF;
 }
 #menu-nav-wrap .header-social-list {
   list-style: none;
@@ -1471,7 +1471,7 @@ header .header-logo a {
 }
 #menu-nav-wrap .header-social-list li a:hover,
 #menu-nav-wrap .header-social-list li a:focus {
-  color: white;
+  color: #03C4EB;
 }
 #menu-nav-wrap .header-social-list li:last-child {
   margin: 0;
@@ -1495,7 +1495,7 @@ header .header-logo a {
   display: block;
   height: 2px;
   width: 12px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
   left: 9px;
@@ -1554,9 +1554,10 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   background-color: #151515;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/VSSUT-01.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
+  background-blend-mode: normal;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1613,6 +1614,10 @@ header .header-logo a {
   border-color: #ffffff;
   color: #ffffff;
 }
+.home-content-tablecell .more .button:hover {
+  border-color: #03C4EB;
+  color: #03C4EB;
+}
 
 /* home social-list */
 .home-social-list {
@@ -1646,8 +1651,9 @@ header .header-logo a {
 .home-social-list li a:hover,
 .home-social-list li a:focus,
 .home-social-list li a:active {
-  color: #151515;
+  color: #03C4EB;
 }
+
 
 /* scroll down */
 .scrolldown {
@@ -1668,7 +1674,7 @@ header .header-logo a {
 .scrolldown a:hover,
 .scrolldown a:focus,
 .scrolldown a:active {
-  color: #151515 !important;
+  color: #ffffff !important;
 }
 
 html[data-useragent*="MSIE 10.0"] .scrolldown,
@@ -1682,7 +1688,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  color: #ffffff !important;
+  color: #03C4EB !important;
   background: transparent;
   position: relative;
   top: 36px;
@@ -2892,7 +2898,7 @@ footer a:visited {
 }
 footer a:hover,
 footer a:focus {
-  color: #f9a828;
+  color: #366fb1;
 }
 footer .row {
   max-width: 1024px;
@@ -2903,7 +2909,18 @@ footer h4.h05 {
   padding-bottom: 4.2rem;
   margin-bottom: 3.6rem;
 }
-footer h4.h05::after {
+footer hr {
+  /* background-color: #000; */
+  border-style: dotted none none;
+  height: 0px;
+  width: 70px;
+  margin: auto;
+  padding-bottom: 3rem;
+  border-color: rgb(119, 117, 117);
+  border-spacing: 20px;
+  border-width: 5px;
+}
+/* footer h4.h05::after {
   display: block;
   content: "";
   width: 100px;
@@ -2912,7 +2929,8 @@ footer h4.h05::after {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+  padding: auto;
+} */
 .footer-subheading {
   font-size: 2rem;
 }
@@ -2925,16 +2943,19 @@ footer h4.h05::after {
 }
 .footer-grid-container {
   display: grid;
-  grid-template-columns: 0 2fr 1fr;
+  grid-template-columns: 0 1fr 1fr;
   grid-gap: 1rem;
 }
 .grid-content {  
   font-size: 2.4rem;
-  line-height: 2;
+  line-height: 2.5;
+  text-align: center;
 }
-.footer-grid-content-1 {
-  margin-left: 5rem;
+.footer-grid-content-1,
+.footer-grid-content-2 {
+  margin: 0 auto;
 }
+
 .footer-main .row .tab-full {
   width: fit-content;
 }
