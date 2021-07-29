@@ -518,7 +518,7 @@ td:last-child {
  *  04. Preloader
  *
  * ------------------------------------------------------------------- */
-#preloader {
+ #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -1331,7 +1331,7 @@ header .header-logo a {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.733);
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1442,7 +1442,7 @@ header .header-logo a {
 #menu-nav-wrap .nav-list li {
   padding-left: 0;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.03);
-  line-height: 4.2rem;
+  line-height: 5.2rem;
 }
 #menu-nav-wrap .nav-list li:first-child {
   border-top: 1px dotted rgba(255, 255, 255, 0.03);
@@ -1460,6 +1460,9 @@ header .header-logo a {
   display: inline-block;
   margin: 0;
   font-size: 2.1rem;
+}
+.header-social-list {
+  padding: 2.8rem 0;
 }
 #menu-nav-wrap .header-social-list li {
   margin-right: 12px;
@@ -1688,7 +1691,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  color: #03C4EB !important;
+  color: #ADD8E6 !important;
   background: transparent;
   position: relative;
   top: 36px;
@@ -2887,6 +2890,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 footer {
+  background-color: #010c1e;
   margin: 0 0 5.4rem 0;
   padding: 0;
   font-size: 1.5rem;
