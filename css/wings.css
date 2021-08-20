@@ -43,8 +43,15 @@ img {
 }
 
 .wings__header>h1 {
-    padding: 80px 0 80px 0;
+    padding-top: 80px;
     text-align: center;
+}
+
+.wings__hr {
+    width: 80px;
+    height: 2px;
+    margin: 40px auto;
+    background: #000;
 }
 
 .wings__card--area {
@@ -60,12 +67,8 @@ img {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    /* height: 340px; */
-    /* padding: 10px; */
     width: clamp(300px, 320px, 350px);
     background: #efeeee;
-    /* border: 1px solid #ffffff20; */
-    /* border-color: #ffffff50 #d1cdc750 #d1cdc750 #ffffff50; */
     box-shadow: -6px -6px 16px #ffffff90, 6px 6px 16px #d1cdc790;
     border-radius: 16px;
     overflow: hidden;
@@ -135,7 +138,7 @@ img {
     transform: translateX(400px);
 }
 
-.wings__card--button {
+.wings__card--button--container {
     padding: 20px;
     display: flex;
     justify-content: flex-end;
