@@ -10,9 +10,9 @@
 
 .testim{
     width: 100%;
-    position: absolute;
+   /* position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
 }
 .testim .wrap{
     position: relative;
