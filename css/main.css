@@ -2335,7 +2335,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *  14. testimonials - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#testimonials {
+/*#testimonials {
   background: #ffffff;
   padding: 12rem 0 7.8rem;
   text-align: center;
@@ -2413,10 +2413,10 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   text-transform: none;
   color: rgba(0, 0, 0, 0.5);
   margin-top: 0.3rem;
-}
+}*/
 
 /* control nav */
-#testimonials .flex-control-nav {
+/*#testimonials .flex-control-nav {
   width: 100%;
   text-align: center;
   display: block;
@@ -2445,13 +2445,13 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 #testimonials .flex-control-paging li a.flex-active {
   background-color: #000000;
-}
+}*/
 
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
+/*@media only screen and (max-width: 1024px) {
   #testimonial-slider p {
     font-size: 2.8rem;
   }
@@ -2497,7 +2497,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   #testimonial-slider p {
     font-size: 2rem;
   }
-}
+} */
 
 /* ===================================================================
  *  15. clients - (_layout.scss)
