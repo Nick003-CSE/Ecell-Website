@@ -9,10 +9,8 @@
 }
 
 .testim{
-    width: 100%;
-   /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%);*/
+    width: 95%;
+ 
 }
 .testim .wrap{
     position: relative;
