@@ -27,7 +27,7 @@
     font-size: 2em;
     top: 50%;
     transform: translateY(-50%);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     padding: 5px;
     z-index: 22222222;
 }
@@ -189,7 +189,7 @@ border-color: #ea830e;
     }
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 700px) {
   .testim{
     width: 95%;
  
