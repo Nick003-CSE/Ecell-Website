@@ -190,11 +190,16 @@ border-color: #ea830e;
 }
 
 @media all and (max-width: 300px) {
-    body {
-        font-size: 14px;
-    }
+  .testim{
+    width: 95%;
+ 
+}
 }
 @media all and (max-width: 500px) {
+    .testim{
+    width: 95%;
+ 
+}
     .testim .arrow{
         font-size: 1.5rem;
     }
