@@ -884,7 +884,7 @@ input::-moz-focus-inner {
 }
 
 .line-height-2 {
-  line-height: 1.2!important;
+  line-height: 1.2 !important;
 }
 
 .ss-error {
@@ -1837,7 +1837,246 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *  11. about - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+body {
+  background: white;
+}
 #about {
+  position: relative;
+  padding: 4.2rem 0 5rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.grid-container {
+  background: rgb(246, 245, 245);
+  position: relative;
+  gap: 2rem;
+  border-radius: 15px;
+  padding: 4rem;
+}
+.about {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  box-shadow: 0 0 20px 16px #0000001f;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-left: 5em;
+  margin-right: 5em;
+  justify-content: center;
+}
+.about-head h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.about-head {
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+}
+/* #about h3::before {
+  display: block;
+  content: "";
+  width: 2.5px;
+  height: 9rem;
+  background-color: rgba(149, 149, 149, 0.7);
+  margin: 0 auto 16px;
+} */
+.lead {
+  font-family: "librebaskerville-bold", serif;
+  text-align: justify;
+  line-height: 1.8;
+  color: #2e383f;
+}
+.column-1 .column-2 {
+  text-align: center;
+  /* position: relative; */
+  z-index: 1;
+  flex: 1000px;
+  width: 20rem;
+  margin: 28em;
+}
+.column-1 .column-2 {
+  display: block;
+  flex-direction: column;
+  border-radius: 8px;
+  font-size: 2.5rem;
+  box-sizing: 25rem;
+}
+p {
+  margin: 36px;
+  line-height: 2;
+}
+.column-1 {
+  display: inline-block;
+  width: 49%;
+  padding-right: 15px;
+}
+.column-2 {
+  display: inline-block;
+  width: 49%;
+  padding-left: 15px;
+}
+.line {
+  background: rgb(14, 13, 13);
+  width: 1px;
+  height: 12em;
+}
+
+/*  ========================================================
+*                       TIMELINE
+*   =========================================================*/
+.timeline-head {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: uppercase;
+}
+#time-head {
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #03c4eb;
+  font-size: 30px;
+  animation: typing 5s infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 25ch;
+  }
+}
+.timeline {
+  position: relative;
+  padding: 2.2rem;
+  justify-content: center;
+}
+.timeline-wrapper {
+  display: block;
+  width: 90%;
+  height: 20rem;
+  position: relative;
+  color: #acb7b9;
+  text-align: center;
+  margin: 5px;
+}
+.timeline-wrapper .timeline-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgb(238, 235, 235);
+  position: absolute;
+  top: 50%;
+  -webkit-box-shadow: 0 0 1px rgb(0, 0, 0);
+  -moz-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
+  left: 3%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.timeline-wrapper .timeline-content-day {
+  height: 100%;
+}
+.timeline-wrapper .timeline-content-item {
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  width: 8%;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  margin-right: -5px;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+  z-index: 1;
+}
+.timeline-wrapper .timeline-content-item > span {
+  height: 2rem;
+  display: block;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.25em;
+  width: 100%;
+  text-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
+.timeline-wrapper .timeline-content-item > span:before {
+  content: " ";
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  background: #010c1e;
+  margin: 0 auto 0.5em auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 1px black;
+  -moz-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
+}
+.timeline-wrapper .timeline-content-item .timeline-content-item-reveal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -50%;
+  width: 100%;
+}
+.timeline-wrapper .timeline-content-item .timeline-content-item-reveal a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.timeline-wrapper .timeline-content-item .timeline-content-item-reveal a img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  max-width: 100%;
+  border: 3px solid #03c4eb;
+  -webkit-box-shadow: 0 0 2px #010c1e;
+  -moz-box-shadow: 0 0 2px black;
+  box-shadow: -1px 10px 8px black;
+}
+.timeline-wrapper .timeline-content-item .timeline-content-item-reveal a span {
+  position: absolute;
+  width: 250%;
+  margin-left: -75%;
+  bottom: -2rem;
+  left: 0;
+  font-family: serif;
+  font-size: 1.3em;
+  font-style: italic;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #010c1e;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 1px black;
+}
+.timeline-wrapper
+  .timeline-content-item
+  .timeline-content-item-reveal
+  a
+  span:after {
+  content: "\203A";
+  margin-left: 0.1em;
+}
+.timeline-wrapper .timeline-content-item.active {
+  width: 10%;
+}
+.timeline-wrapper .timeline-content-item.active .timeline-content-item-reveal {
+  display: block;
+}
+
+/* #about {
   position: relative;
   padding: 4.2rem 0 12rem;
   background-color: #ffffff;
@@ -1873,6 +2112,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   color: #2e383f;
   margin-top: 6rem;
 }
+*/
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1887,6 +2127,9 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   }
   #about .lead {
     font-size: 2.5rem;
+  }
+  .line {
+    height: 12em;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1937,6 +2180,9 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   }
   #about .lead {
     font-size: 1.5rem;
+  }
+  .line {
+    height: 33em;
   }
 }
 
