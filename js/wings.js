@@ -5,10 +5,10 @@ let open = [0, 0, 0];
 buttons.forEach((button, index) => {
     button.addEventListener('click', e => {
         if (open[index] === 0) {
-            e.target.style.transform = 'scale(2) rotateZ(180deg)';
+            e.target.style.transform = 'rotateZ(180deg)';
             open[index] = 1;
         } else {
-            e.target.style.transform = 'scale(2) rotateZ(0deg)';
+            e.target.style.transform = 'rotateZ(0deg)';
             open[index] = 0;
         }
         face[index].classList.toggle('face--gone');

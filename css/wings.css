@@ -145,8 +145,8 @@ img {
 }
 
 .fa-pen-nib {
-    transform-origin: 40% 65%;
-    transform: rotateZ(-45deg) scale(2) translateY(2px) !important;
+    position: relative;
+    transform: rotateZ(-45deg);
     color: limegreen;
 }
 
@@ -160,10 +160,4 @@ img {
 
 .fa-arrow-circle-right {
     cursor: pointer;
-}
-
-#wings .fas,
-.fab {
-    /* padding-left: 10px; */
-    transform: scale(2);
 }
