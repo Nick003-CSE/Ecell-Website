@@ -50,7 +50,7 @@ input[type=text], select, textarea {
     
 
   }
-  
+
  .wrapper >div{
    padding:1em;
  }
@@ -58,6 +58,7 @@ input[type=text], select, textarea {
    display:grid;
    grid-template-columns: 50% 50%;
    grid-gap:1em;
+   
  }
  .nested > div{
    border:white 1px solid;
@@ -65,6 +66,7 @@ input[type=text], select, textarea {
    grid-template-columns: repeat(3,1fr);
    grid-gap:1em;
    color:white;
+  
  }
  ::placeholder { 
   color: rgba(8, 1, 1, 0.973);
@@ -136,24 +138,6 @@ input[type=text], select, textarea {
   }
  
   
-  .info {
-    color: #333333;
-  }
-  
-   .info i {
-    font-size: 32px;
-    color: #03C4EB;
-    float: left;
-  }
-  
-   .info p {
-    padding: 0 0 10px 50px;
-    line-height: 24px;
-   }
-  .con2{
-    border-radius: 5px;
-    padding: 20px;
-    width:400px;
-    align-items: flex-start; 
-    float: left;
-  }
+.nested p{
+  padding-top: 20px;
+}
