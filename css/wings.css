@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-h1 {
+#wings h1 {
     font-family: Poppins, serif;
     font-size: 40px;
     font-weight: 500;
@@ -18,31 +18,31 @@ h1 {
     margin: 0;
 }
 
-h2 {
-    font-family: 'Roboto', serif;
+#wings h2 {
+    font-family: Roboto, serif;
     color: #000;
     margin: 0;
 }
 
-p {
+#wings p {
     font-family: Roboto, serif;
     font-size: 15px;
     margin: 0;
     line-height: normal;
 }
 
-span {
+#wings span {
     font-family: Roboto, serif;
     font-size: 12px;
     color: #8c92ac;
 }
 
-img {
+#wings img {
     margin: 0;
     padding: 0;
 }
 
-.wings__header>h1 {
+.wings__header h1 {
     padding-top: 80px;
     text-align: center;
 }
