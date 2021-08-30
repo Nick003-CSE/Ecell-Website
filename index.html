@@ -55,11 +55,13 @@
     <link rel="stylesheet" href="css/main.css?ver=1.1">
     <link rel="stylesheet" href="css/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
     <link rel="stylesheet" href="css/wings.css">
 
     <link rel="stylesheet" href="css/ourstar.css">
+
 
 
     <!-- favicons
@@ -852,7 +854,126 @@
 
     <!-- Testimonials Section
     ================================================== -->
-    <!--<section id="testimonials">-->
+
+   <!-- TESTIMONIALS -->
+<section id="testimonials">	
+   <section class="testim" id="testim">
+    <div class="wrap">
+
+        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+        <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+        <ul class="dots" id="testim-dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
+
+        <div class="cont" id="testim-content">
+
+            <div class="active">
+                <div class="img"><img src="images/testimonial/img-2.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-4.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-3.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-2.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-4.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+        </div>
+
+    </div>
+        </section>
+	</section>
+	 <!---Testimonial Script--->
+	<script>
+
+// vars
+
+var testim = document.getElementById("testim"),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimleftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer
+    ;
+
+window.onload = function () {
+ 
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length - 1;
+        }
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+ 
+        currentActive = currentSlide;
+ 
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function () {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimleftArrow.addEventListener("click", function () {
+        playSlide(currentSlide -= 1);
+    })
+    testimRightArrow.addEventListener("click", function () {
+        playSlide(currentSlide += 1);
+    })
+ 
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function () {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+    playSlide(currentSlide);
+ 
+}
+
+    </script>
+	 <!---Testimonial Script--->
+	
+    <!-- END OF TESTIMONIALS -->
+
+
 
         <!-- <div class="row">
         <div class="col-twelve">
@@ -895,7 +1016,7 @@
             </ul>
         </div>
     </div> -->
-    </section>
+    
     <!-- end testimonials -->
 
 
@@ -1753,6 +1874,8 @@
     <div id="preloader">
         <div id="loader"></div>
     </div>
+	
+
 
     <!-- Java Script
                  ================================================== -->
