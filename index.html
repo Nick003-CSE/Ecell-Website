@@ -62,7 +62,7 @@
 
     <link rel="stylesheet" href="css/ourstar.css">
 
-
+    <link rel="stylesheet" href="css/gallery.css">
 
     <!-- favicons
 		================================================== -->
@@ -627,6 +627,67 @@
 
                     <p class="lead">Ecell brings to its participants a host of events, ranging from immersive talks to exciting competitions! </p>
                 </div>
+
+
+                <div class="container">
+                    <div class="photos fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="https://source.unsplash.com/1600x900/?nature,rain" style="width:100%">
+                      <div class="text">
+                          <span>Event 1</span>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="photos fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="https://source.unsplash.com/1600x900/?nature,water" style="width:100%">
+                      <div class="text">
+                        <span>Event 1</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="photos fade">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="https://source.unsplash.com/1600x900/?nature,forest" style="width:100%">
+                      <div class="text">
+                        <span>Event 1</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                      </div>
+                    </div>
+
+                    <div class="photos fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="https://source.unsplash.com/1600x900/?nature,forest" style="width:100%">
+                        <div class="text">
+                          <span>Event 1</span>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                        </div>
+                    </div>
+
+                      <div class="photos fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="https://source.unsplash.com/1600x900/?nature,rain" style="width:100%">
+                        <div class="text">
+                          <span>Event 1</span>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                        </div>
+                      </div>
+                    
+                    <a class="previous" onclick="photoNumber(-1)">&#10094;</a>
+                    <a class="next" onclick="photoNumber(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="current(1)"></span> 
+                      <span class="dot" onclick="current(2)"></span> 
+                      <span class="dot" onclick="current(3)"></span>
+                      <span class="dot" onclick="current(4)"></span>
+                      <span class="dot" onclick="current(5)"></span> 
+                    </div>
             </div>
             <!-- end row section-intro -->
 
@@ -1889,7 +1950,7 @@ window.onload = function () {
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
-
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>
