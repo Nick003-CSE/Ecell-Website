@@ -1,0 +1,143 @@
+.section-title-divider {
+    width: 50px;
+    height: 3px;
+    background: #08c8ee;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .description{
+      text-align:center;
+      font-size: 20px;
+      font-display: fallback;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color:white;
+  }
+  
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 0px; /* Some padding */ 
+    border: 2px solid rgb(24, 1, 1); /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: center;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;;
+    padding: 10px;
+    width:500px;
+    align-items: flex-end;
+    float: right;
+    
+
+  }
+
+ .wrapper >div{
+   padding:1em;
+ }
+ .wrapper{
+   display:grid;
+   grid-template-columns: 50% 50%;
+   grid-gap:1em;
+   
+ }
+ .nested > div{
+   border:white 1px solid;
+   display:grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap:1em;
+   color:white;
+  
+ }
+ ::placeholder { 
+  color: rgba(8, 1, 1, 0.973);
+ }
+
+  .social_media_links{
+    padding:30px;
+    margin: 5px 4px;  
+    text-align: center;
+    color: white;
+    }
+  .fa {  
+    padding: 34px;  
+    text-align: center;  
+    margin: 5px 4px;  
+    font-size: 200px;  
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;  
+    color: whitesmoke;
+   
+
+  } 
+  .fa:hover{
+    background-color: beige;
+    cursor:pointer;
+  }
+  .fa-facebook {  
+    background: #4267B2;  
+    color:white;  
+  }  
+  .fa-twitter {  
+    background: #55ACEE;  
+    color: white;  
+  }  
+    
+  .fa-linkedin {  
+    background: #007bb5;  
+    color: white;  
+  }  
+  .fa-instagram {  
+    background: #c02790;  
+    color: white;  
+  }  
+  .fa-youtube {  
+    background: #bb0000;  
+    color: white;  
+  }  
+    
+  .fa:hover {  
+      opacity: 0.9;  
+  }
+ 
+  #footer {
+    background: #111;
+    padding: 30px 0;
+    color: #fff;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+  }
+ 
+  
+.nested p{
+  padding-top: 20px;
+}
