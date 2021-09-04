@@ -54,11 +54,15 @@
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.css?ver=1.1">
     <link rel="stylesheet" href="css/font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
     <link rel="stylesheet" href="css/wings.css">
 
     <link rel="stylesheet" href="css/ourstar.css">
-    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet" href="css/gallery.css">
 
     <!-- favicons
 		================================================== -->
@@ -279,6 +283,7 @@
 
     <!-- about
     ================================================== -->
+    <section id="about">
 
     <div class="grid-container intro about-wrap" id="about">
         <div class="about-head"><h3 class="Head">About Us</h3></div>
@@ -367,45 +372,28 @@
                 </div>
             </div>
 
-            <div class="timeline-content-item" data-timeline="hour-15">
-                <span class='year'>2020</span>
-                <div class="timeline-content-item-reveal">
-                    <a href="#">
-                        <img src="images/Timeline/esummit.png">
-                        <span>E-Summit</span>
-                    </a>
-                </div>
-            </div>
+                <!-- <div class="about-profile-bg"></div> -->
 
-            <div class="timeline-content-item" data-timeline="hour-16">
-                <span class='year'>2020</span>
-                <div class="timeline-content-item-reveal">
-                    <a href="#">
-                        <img src="images/Timeline/Innobuzz.png">
-                        <span>Innobuzz 2.0</span>
-                    </a>
+                <div class="intro">
+                    <h3 class="animate-this">About Us</h3>
+                    <p class="lead animate-this">
+                        <span>E-Cell, IIT Kanpur</span> aims to induce an entrepreneurial mindset into the students and air an innovative streak in them. We are here to water the ‘Ideas’ in the bud and help them bloom into impactful endeavors through
+                        networking student enterprises from campus to incubators, seeding funds and angel investors to transform the newly proposed ideas into successful start-ups.
+                    </p>
+                    <div class='onesignal-customlink-container'></div>
                 </div>
-            </div>
 
-            <div class="timeline-content-item" data-timeline="hour-17">
-                <span class='year'>2021</span>
-                <div class="timeline-content-item-reveal">
-                    <a href="#">
-                        <img src="images/Timeline/ipl_auction.png">
-                        <span>Mock IPL Auction</span>
-                    </a>
-                </div>
             </div>
-
-            
+            <!-- end col-full  -->
         </div>
-    </div>
+        <!-- end about-wrap  -->
+
     </section>
+    <!-- end about -->
+
 
     <!-- about
     ================================================== -->
-    <!-- end about -->
-
     <section id="services">
 
         <div class="overlay">
@@ -723,6 +711,67 @@
 
                     <p class="lead">Ecell brings to its participants a host of events, ranging from immersive talks to exciting competitions! </p>
                 </div>
+
+
+                <div class="container">
+                    <div class="photos fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="https://source.unsplash.com/1600x900/?nature,rain" style="width:100%">
+                      <div class="text">
+                          <span>Event 1</span>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="photos fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="https://source.unsplash.com/1600x900/?nature,water" style="width:100%">
+                      <div class="text">
+                        <span>Event 1</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="photos fade">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="https://source.unsplash.com/1600x900/?nature,forest" style="width:100%">
+                      <div class="text">
+                        <span>Event 1</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                      </div>
+                    </div>
+
+                    <div class="photos fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="https://source.unsplash.com/1600x900/?nature,forest" style="width:100%">
+                        <div class="text">
+                          <span>Event 1</span>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                        </div>
+                    </div>
+
+                      <div class="photos fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="https://source.unsplash.com/1600x900/?nature,rain" style="width:100%">
+                        <div class="text">
+                          <span>Event 1</span>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cum quae reprehenderit facilis enim,.</p>
+                        </div>
+                      </div>
+                    
+                    <a class="previous" onclick="photoNumber(-1)">&#10094;</a>
+                    <a class="next" onclick="photoNumber(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="current(1)"></span> 
+                      <span class="dot" onclick="current(2)"></span> 
+                      <span class="dot" onclick="current(3)"></span>
+                      <span class="dot" onclick="current(4)"></span>
+                      <span class="dot" onclick="current(5)"></span> 
+                    </div>
             </div>
             <!-- end row section-intro -->
 
@@ -929,10 +978,10 @@
             <div class="card">
                 <div class="circle"></div>
                 <div class="content">
-                    <a href="http://grapixi.in/"><b>Graphixi</b></a>
+                    <a href="http://grapixi.in/"><b>Grapixi</b></a>
                     <p>A multi disciplinary design studio that provides services related to design, decors and digital marketing .</p>
                 </div>
-                <img src="images/startup/grapixifin.png" alt="Graphixi">
+                <img src="images/startup/grapixifin.png" alt="Grapixi">
             </div>
             <div class="card">
                 <div class="circle"></div>
@@ -950,7 +999,126 @@
 
     <!-- Testimonials Section
     ================================================== -->
-    <!--<section id="testimonials">-->
+
+   <!-- TESTIMONIALS -->
+<section id="testimonials">	
+   <section class="testim" id="testim">
+    <div class="wrap">
+
+        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+        <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+        <ul class="dots" id="testim-dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
+
+        <div class="cont" id="testim-content">
+
+            <div class="active">
+                <div class="img"><img src="images/testimonial/img-2.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-4.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-3.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-2.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+             
+            <div>
+                <div class="img"><img src="images/testimonial/img-4.jpg"></div>
+                <h2>Shri L N Mishra, Former Director of MCL (Mahanadi Coalfields Limited).</h2>
+                <p>E-Cell VSSUT Burla truely deserves personal appreciation. The kind of start-ups they've established within this short time is remarkable.</p>
+            </div>
+        </div>
+
+    </div>
+        </section>
+	</section>
+	 <!---Testimonial Script--->
+	<script>
+
+// vars
+
+var testim = document.getElementById("testim"),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimleftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer
+    ;
+
+window.onload = function () {
+ 
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length - 1;
+        }
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+ 
+        currentActive = currentSlide;
+ 
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function () {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimleftArrow.addEventListener("click", function () {
+        playSlide(currentSlide -= 1);
+    })
+    testimRightArrow.addEventListener("click", function () {
+        playSlide(currentSlide += 1);
+    })
+ 
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function () {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+    playSlide(currentSlide);
+ 
+}
+
+    </script>
+	 <!---Testimonial Script--->
+	
+    <!-- END OF TESTIMONIALS -->
+
+
 
         <!-- <div class="row">
         <div class="col-twelve">
@@ -993,7 +1161,7 @@
             </ul>
         </div>
     </div> -->
-    </section>
+    
     <!-- end testimonials -->
 
 
@@ -1767,106 +1935,77 @@
 
 
     <!-- footer ================================================== -->
-    <footer>
-        <div class="footer-main">
+    <section id="contact">
+        <div id="header">
+            <h1><b><p style="text-align: center; color: white; font: 2.5em sans-serif;">CONTACT US</p> </b></h1>
+        </div>
+        <div class="section-title-divider"></div>
+        <p class="description">Mail us for information regarding events or possible collaborations.</p>
 
-            <div class="row footer-grid-container">
+ </div>
 
-                <div class="col-five tab-full footer-about grid-content footer-grid-content-1">
+ <br>
+ <br>
+ <br>
+    <div class="wrapper" >
+        <div class="nested">
+          <div>
+            <i class="fa fa-map-marker" ></i>
+            <p style="color:white;">Entrepreneurship Cell<br>Veer Surendra Sai University of Technology, Burla <br> 768018</p>
+          </div>
 
-                    <h4 class="h05 footer-subheading">E-Cell, VSSUT.</h4>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p style="color:white;">info@ecellvssut.in</p>
+          </div>
 
-                        <hr>
-                                                           
-                        <p> Ideate  
-                            <br> Innovate
-                            <br> Incubate
-                        </p>                                            
-
-                </div>
-                <!-- end footer-about -->
-
-                <div class="col-three tab-full footer-social grid-content footer-grid-content-2">
-
-                    <h4 class="h05 footer-subheading">Follow Us.</h4>
-
-                    <hr>
-
-                    <ul class="list-links">
-                        <li>
-                            <a href="https://facebook.com/ecelliitk">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="https://m.me/ecelliitk">
-                                Messenger
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kanpur/">
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/ecelliitk/">
-                                Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/ecelliitk">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCvxavCg0UhXq6oKkrBHc9zQ">YouTube</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                               
-
-                <!-- end footer-social -->
-
-                <div class="col-four tab-full footer-subscribe end">
-
-                    <h4 class="h05">Get Notified.</h4>
-
-                    <p>Be the first to know about the activities of E-Cell.</p>
-
-                    <div class="subscribe-form">
-                        <form id="mc-form" class="group" novalidate="true">
-                            <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email" required="">
-                            <!-- <input type="submit" name="subscribe" > -->
-                            <button>
-                                <i class="icon-mail"></i>
-                            </button>
-                            <label for="mc-email" class="subscribe-message"></label>
-                        </form>
-                    </div>
-
-                </div>
-                <!-- end footer-subscribe -->
-
-
-            </div>
-            <!-- end row -->
+          <div>
+            <i class="fa fa-phone"></i>
+            <p style="color:white;">+91 78092 19566</p>
+          </div>
 
         </div>
-        <!-- end footer-main -->
+      
+        <div class="container">
+          <form action="action_page.php" >
+          <label for="name">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name" style="height:25px ; color: black;">
+          
+          <label for="email">E-mail</label>
+        
+          <input type="text" id="mail" name="Email" placeholder="Your email"  style="height:25px ; color: black;">
+         
+            <label for="subject">Subject</label>
+            <input type="subject" name="subject" placeholder="Write something.." style="height:65px; width: 465px;">
+            <label for="message">Message</label>
+            <input type="text" name="message" placeholder="Type your message here" style="height:40px ; color: black;">
+            
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>      
+</div>
 
-        <div class="footer-bottom">
 
-            <div class="row">
+<div class="social_media_links">
+  <a href="https://www.facebook.com/ecellvssut/" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/ecellvssut?lang=en" class="fa fa-twitter"></a>
+  <a href="https://in.linkedin.com/company/ecellvssut" class="fa fa-linkedin"></a>  
+  <a href="https://www.instagram.com/ecellvssut/?hl=en" class="fa fa-instagram"></a>  
+  <a href="https://www.youtube.com/channel/UCrUHoXLCItvfP9Xa_KITwvg" class="fa fa-youtube"></a>
+  </div>
+  <br>
+  <p style="text-align: center; font-size: 1em; color: white;">IDEATE  INNOVATE  INCUBATE</p>
 
-                <div class="col-twelve">
-                    <div class="copyright">
-                        <span>With love from
-                            <a href="">E-Cell, VSSUT</a>
-                        </span>
-                    </div>
-                </div>
-
-            </div>
-
+  </section>
+<footer id="footer">
+ 
+        <div class="copyright">
+          &copy; Copyright <strong>E-Cell VSSUT</strong>. All Rights Reserved
         </div>
+           
+</footer>
         <!-- end footer-bottom -->
 
         <div id="go-top">
@@ -1880,6 +2019,8 @@
     <div id="preloader">
         <div id="loader"></div>
     </div>
+	
+
 
     <!-- Java Script
                  ================================================== -->
@@ -1888,13 +2029,12 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js?ver=1.2"></script>
-    <script src="js/timeline.js"></script>
     <!-- script
 		================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
-
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>
