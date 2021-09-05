@@ -251,3 +251,135 @@ p {
   font: 16px bold;
   letter-spacing: 1.17px;
 }
+@media screen and (max-width: 760px) {
+  .timeline,
+  .timeline-wrapper {
+    display: none;
+    visibility: hidden;
+  }
+}
+/* -------Vertical vertical-Timeline-------- */
+
+.vertical-timeline {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.vertical-timeline:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border: 1px solid #03c4eb;
+  right: 40px;
+  top: 0;
+}
+.vertical-timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 700px) {
+  .vertical-timeline {
+    padding: 2rem;
+  }
+  .vertical-timeline:before {
+    left: calc(50% - 1px);
+    right: auto;
+  }
+}
+
+.vertical-timeline__item {
+  padding: 1rem;
+  border: 2px solid hotpink;
+  border-image: linear-gradient(to right, skyblue 0%, hotpink 100%);
+  border-image-slice: 1;
+  position: relative;
+  margin: 1rem 3rem 1rem 1rem;
+  clear: both;
+}
+.vertical-timeline__item:after,
+.vertical-timeline__item:before {
+  content: "";
+  position: absolute;
+}
+.vertical-timeline__item:before {
+  right: -10px;
+  top: calc(50% - 5px);
+  border-style: solid;
+  border-color: #03c4eb hotpink transparent transparent;
+  border-width: 10px;
+  transform: rotate(45deg);
+}
+@media screen and (min-width: 700px) {
+  .vertical-timeline__item {
+    width: 44%;
+    margin: 1rem;
+  }
+  .vertical-timeline__item:nth-of-type(2n) {
+    float: right;
+    margin: 1rem;
+    border-image: linear-gradient(to right, hotpink 0%, skyblue 100%);
+    border-image-slice: 1;
+  }
+  .vertical-timeline__item:nth-of-type(2n):before {
+    right: auto;
+    left: -10px;
+    border-color: transparent transparent hotpink hotpink;
+  }
+}
+
+.vertical-timeline__item--year {
+  text-align: center;
+  max-width: 150px;
+  margin: 0 48px 0 auto;
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: #010c1e;
+  line-height: 1;
+  border-image: none;
+  padding: 0.5rem 1rem 1rem;
+}
+.vertical-timeline__item--year:before {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .vertical-timeline__item--year {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .vertical-timeline__item--year:nth-of-type(2n) {
+    float: none;
+    margin: 0 auto;
+    border-image: none;
+  }
+  .vertical-timeline__item--year:nth-of-type(2n):before {
+    display: none;
+  }
+}
+
+.vertical-timeline__title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+}
+
+.vertical-timeline__blurb {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+/*--------------   
+                Media Query for Vertical vertical-Timeline --------------*/
+
+@media (min-width: 760px) and (max-width: 2400px) {
+  .vertical-timeline-head,
+  .vertical-timeline,
+  .vertical-timeline__item,
+  .vertical-timeline__item--year,
+  .vertical-timeline__title,
+  .vertical-timeline__blurb {
+    display: none;
+    visibility: hidden;
+  }
+}
