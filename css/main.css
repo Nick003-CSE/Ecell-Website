@@ -1532,16 +1532,6 @@ header .header-logo a {
   visibility: visible;
   -webkit-overflow-scrolling: touch;
 }
-.header-social-list li {
-  padding: 10px 40px;
-  color: #c9ccd5;
-}
-.header-menu-text {
-  color: #ffffff;
-}
-.header-menu-text:hover {
-  color: #f3f0d7;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:

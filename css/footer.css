@@ -40,3 +40,13 @@ footer hr {
   margin-bottom: 0;
   color: #19191b;
 }
+.header-social-list li {
+  padding: 10px 40px;
+  color: #c9ccd5;
+}
+.header-menu-text {
+  color: #ffffff;
+}
+.header-menu-text:hover {
+  color: #f3f0d7;
+}
