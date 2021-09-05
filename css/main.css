@@ -1388,6 +1388,21 @@ header .header-logo a {
 #header-menu-trigger .header-menu-icon::after {
   bottom: -9px;
 }
+.homepage-quote {
+  padding: 1.5rem 0;
+  margin-bottom: 0;
+  color: #19191b;
+}
+.header-social-list li {
+  padding: 10px 40px;
+  color: #c9ccd5;
+}
+.header-menu-text {
+  color: #ffffff;
+}
+.header-menu-text:hover {
+  color: #f3f0d7;
+}
 
 /* ------------------------------------------------------------------- 
  * off-canvas menu - (_layout.scss) 
@@ -2932,6 +2947,23 @@ footer h4.h05 {
   padding-top: 9.6rem;
   padding-bottom: 3rem;
 }
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 0 1fr 1fr;
+  grid-gap: 1rem;
+}
+.grid-content {
+  font-size: 2.4rem;
+  line-height: 2.5;
+  text-align: center;
+}
+.footer-grid-content-1,
+.footer-grid-content-2 {
+  margin: 0 auto;
+}
+.h05 .footer-subheading {
+  font-size: 2rem;
+}
 .footer-main .row .tab-full {
   width: fit-content;
 }
@@ -2990,6 +3022,25 @@ footer h4.h05 {
 .footer-main #mc-form label {
   color: #f9a828;
   font-family: "montserrat-regular", sans-serif;
+}
+.list-links li {
+  font-size: 2rem;
+}
+.motto {
+  padding: 1.3em 0;
+}
+.footer-subheading {
+  font-size: 2rem;
+}
+footer hr {
+  border-style: dotted none none;
+  height: 0px;
+  width: 70px;
+  margin: auto;
+  padding-bottom: 3rem;
+  border-color: rgb(119, 117, 117);
+  border-spacing: 20px;
+  border-width: 5px;
 }
 
 /* footer bottom
