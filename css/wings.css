@@ -1,0 +1,40 @@
+#wings {
+    width: 100%;
+    /* min-height: 100vh; */
+    padding: 80px 0;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wings__header {
+    text-align: center;
+    padding: 20px;
+}
+
+.wings__header h1 {
+    font-size: 40px;
+}
+
+.wings__header span {
+    font-size: 18px;
+}
+
+.wings__card--area {
+    width: 100%;
+    height: 100%;
+    /* padding: 0 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wings__card {
+    width: 300px;
+    height: 400px;
+    background: #ddd;
+    margin: 40px 20px;
+    /* margin-bottom: 40px; */
+}
