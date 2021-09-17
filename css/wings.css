@@ -1,169 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Libre+Baskerville:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 #wings {
     width: 100%;
-    background: #efeeee;
+    /* min-height: 100vh; */
+    padding: 80px 0;
+    background: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+#wings p {
+    font-family: sans-serif;
+    font-weight: 600;
 }
 
-h1 {
-    font-family: Poppins, serif;
-    font-size: 40px;
-    font-weight: 500;
-    color: #010c1e;
-    margin: 0;
-}
-
-h2 {
-    font-family: 'Roboto', serif;
-    color: #000;
-    margin: 0;
-}
-
-p {
-    font-family: Roboto, serif;
-    font-size: 15px;
-    margin: 0;
-    line-height: normal;
-}
-
-span {
-    font-family: Roboto, serif;
-    font-size: 12px;
-    color: #8c92ac;
-}
-
-img {
-    margin: 0;
-    padding: 0;
-}
-
-.wings__header>h1 {
-    padding-top: 80px;
+.wings__header {
     text-align: center;
+    padding: 20px;
 }
 
-.wings__hr {
-    width: 80px;
-    height: 2px;
-    margin: 40px auto;
-    background: #000;
+.wings__header h1 {
+    font-size: 40px;
+}
+
+.wings__header span {
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
 .wings__card--area {
-    padding: 0 0 80px;
+    width: 100%;
+    height: 100%;
+    /* padding: 0 20px; */
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .wings__card {
     position: relative;
+    width: 300px;
+    height: 400px;
+    background: #eee;
+    box-shadow: 3px 3px 16px #69696969;
+    margin: 40px 20px;
+    padding: 10px;
+    transition: all 400ms;
+    border-radius: 16px;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    /* margin-bottom: 40px; */
+}
+
+.wings__card--body {
+    background: #fff;
+    position: absolute;
+    padding: 10px;
+    border-radius: 16px;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    top: -400px;
+    left: 16px;
+    transition: all 500ms;
+    /* padding: 16px; */
+}
+
+.wings__card--body {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    width: clamp(300px, 320px, 350px);
-    background: #efeeee;
-    box-shadow: -6px -6px 16px #ffffff90, 6px 6px 16px #d1cdc790;
-    border-radius: 16px;
-    overflow: hidden;
-}
-
-.wings__card--header {
-    /* background: #010c1e; */
-    position: relative;
-    /* Idk why it leaves 1px margin from the left *_* */
-    left: -1px;
-    width: 340px;
-    height: 68px;
-    border-bottom: 1px solid #000;
-}
-
-.wings__card--logo {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    background: #eee;
-}
-
-.wings__card--logo {
-    position: absolute;
-    top: 64px;
-    right: 20px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.wings__card--title {
-    padding: 10px 10px;
-}
-
-.wings__card--desc {
-    position: relative;
-    height: 120px;
-    padding: 10px 10px;
-}
-
-.wings__card--face {
-    position: absolute;
-    width: calc(100% - 20px);
-    transform: translateX(0);
-    transition: all 0.3s;
-}
-
-.wings__card--links {
-    width: calc(100% - 20px);
-    height: calc(100% - 60px);
-    position: absolute;
-    transform: translateX(0);
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
-.face--gone {
-    transform: translateX(-400px);
-}
-
-.links--gone {
-    transform: translateX(400px);
-}
-
-.wings__card--button--container {
-    padding: 20px;
+.wings__card--head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms;
 }
 
-.fa-pen-nib {
-    transform-origin: 40% 65%;
-    transform: rotateZ(-45deg) scale(2) translateY(2px) !important;
-    color: limegreen;
+.wings__card--head--logo {
+    width: 200px;
+    filter: drop-shadow(0 0 1px #69696950);
 }
 
-.fa-compass {
-    color: #f00;
+.wings__card--body--desc {
+    /* padding: 5px; */
+    line-height: 1.5em;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.fa-briefcase {
-    color: #010c1e;
+.wings__card--head--name {
+    /* padding: 5px; */
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    transition: all 400ms;
 }
 
-.fa-arrow-circle-right {
-    cursor: pointer;
+.wings__card--head--name::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #aaa;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    transition: all 300ms;
 }
 
-#wings .fas,
-.fab {
-    /* padding-left: 10px; */
-    transform: scale(2);
+
+/* .wings__card--curtain {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    transform-origin: 50% 0;
+    transition: all 500ms;
+    transform: scaleY(0);
+} */
+
+.wings--east {
+    background: #f00;
+}
+
+.wings--interno {
+    background: limegreen;
+}
+
+.wings--satt {
+    background: #FEFD45;
+}
+
+.wings__card--body--icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wings__social--icons {
+    /* padding: 7px; */
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background: #eee;
+    color: #000;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.wings__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 16px #69696990;
+}
+
+.wings__card:hover .wings__card--head {
+    transform: translateY(400px);
+}
+
+.wings__card:hover .wings__card--body {
+    top: 16px;
+    transition-delay: 300ms;
+}
+
+.wings__card:hover .wings__card--head--name::after {
+    transition-delay: 700ms;
+    transform: scaleX(1);
 }
