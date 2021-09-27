@@ -8,9 +8,16 @@
     justify-content: center;
 }
 
+#wings p,
+#wings span {
+    margin: 0;
+    padding: 0;
+}
+
 #wings p {
     font-family: sans-serif;
     font-weight: 600;
+    font-size: 1.1em;
 }
 
 .wings__header {
@@ -20,6 +27,7 @@
 
 .wings__header h1 {
     font-size: 40px;
+    margin-bottom: 24px;
 }
 
 .wings__header span {
@@ -92,7 +100,7 @@
 
 .wings__card--body--desc {
     /* padding: 5px; */
-    line-height: 1.5em;
+    line-height: 1.2em;
     background: #fff;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -100,6 +108,7 @@
 
 .wings__card--head--name {
     /* padding: 5px; */
+    margin-bottom: 24px;
     background: #fff;
     border-radius: 10px;
     position: relative;
