@@ -128,8 +128,8 @@
 }
 
 .testim .cont div p {
-    font-size: 1.15em;
-    color: rgb(216, 205, 205);
+    font-size: 14px;
+    color: #000;
     width: 80%;
     margin: auto;
 }
