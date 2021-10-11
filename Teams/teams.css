@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: montserrat, sans-serif;
+    background-image: url("background.jpg");
+    background-size: 100% 100vw;
+}
+nav{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+
+    display: inline-flex;
+    align-items: center;
+
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+nav a{
+    margin: 0px 8px;
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(51, 50, 50);
+    transition: 0.25s;
+    
+
+    display: inline-flex;
+    align-items: center;
+    height: 70%;
+    padding: 0px 8px;
+    border-radius: 8px;
+
+    position: absolute;
+    right: 0;
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
+    transition: 0.25s;
+}
+nav img{
+    height: 60px;
+    margin: 0px 10px;
+}
+#ourteam {
+    display: inline-flex;
+}
+#ourteam .card{
+    width: 350px;
+}
+.teams{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teams h1{
+    margin: 40px;
+    border-bottom: solid 6px rgb(151, 151, 255);
+    text-align: center;
+}
+.grid h3{
+    padding-top: 30px;
+    padding-right: 5px;
+    margin-bottom: 2px;
+
+
+    font-weight: 700;
+    transition: 0.5s;
+}
+.grid h4{
+    font-weight: 400;
+    font-style: italic;
+    transition: 0.5s;
+}
+.grid{
+    display: grid;
+    grid-gap:10vh;
+
+    grid-template-columns: repeat(3,350px);
+    grid-auto-rows: auto;
+    
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative; 
+    overflow: hidden;
+
+    background-color: white;
+
+    height: 180px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+
+    transition: 0.2s;
+
+}
+.card img{
+    margin: 0px 20px;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 100%;
+
+    transform: scale(90%);
+    transition: 0.5s;
+}
+.background{
+    position: absolute;
+    top: 6px;
+    left: -80px;
+
+
+    transform: rotateZ(-25deg) translateX(-15%);
+
+    width: 200px;
+    height: 300px;
+
+    background-color: grey;
+    
+    transition: 0.5s;
+}
+.profile{
+    position: relative;
+    height: 100%;
+
+    flex-grow: 1;
+    display: flex;
+}
+.icons{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 8px;
+    right: 8px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    font-size: 80%;
+}
+.icons i{
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+
+/*----------------------------card-hover effects------------------*/
+.card:hover{
+    transform: translate(-5px,-5px);
+    box-shadow: 10px 10px 18px 5px rgba(0, 0, 0, 0.363);
+    transition: 0.3s;
+}
+.card:hover .background{
+    transform: rotateZ(-25deg);
+    transition: 0.5s;
+}
+.card:hover img{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.card:hover i{
+    animation: socialm 0.6s forwards 0.1s ease-in-out;
+}
+@keyframes socialm {
+    50%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.card i:hover{
+    color: black;
+    transition: 0.2s;
+}
+.card i:active{
+    color: grey;
+    transition: 0.2s;
+}
+
+
+@media (max-width:1214px) {
+    .grid{
+        grid-template-columns: repeat(2,350px);
+}
+}
+@media (max-width:810px) {
+    .grid{
+    grid-template-columns: 450px;
+}
+
+#ourteam{
+    flex-direction: column;
+}
+#ourteam .card{
+    width: 450px;
+}
+}
+
+@media (max-width:500px) {
+    .grid{
+        grid-template-columns: 90vw;
+    }
+    #ourteam .card{
+        width: 90vw;
+    }
+}
+@media (max-width:425px) {
+    nav a{
+        margin: 5px;
+        background-color: transparent;
+    }
+    nav i{
+        margin: 0px 0px;
+        font-size: 30px;
+    }
+    nav h3{
+        display: none;
+    }
+    .card{
+        height: 25vh;
+    }
+}
+@media (max-width:380px) {
+    .teams h1{
+        font-size: 25px;
+    }
+    .card h3{
+        padding-bottom: 10px;
+    }
+    .card img{
+        width: 100px;
+        height: 100px;
+    }   
+    .grid h3{
+        padding-top: 20px;
+        font-weight: 700;
+        transition: 0.5s;
+        margin-bottom: -8px;
+    }
+}
