@@ -3,6 +3,7 @@ const logo = document.querySelector('.logo');
 const logoAside = document.querySelector('.logo-aside');
 const content = document.querySelector('.content');
 const gif = document.querySelector('.preload');
+const sections = document.querySelectorAll('section');
 
 window.addEventListener('load', () => {
     gif.style.opacity = '0';
@@ -16,4 +17,7 @@ window.addEventListener('load', () => {
     logoAside.style.opacity = '1';
     logoAside.style.transform = 'translateX(0)';
     document.body.style.overflow = 'auto';
+    sections.forEach(section => {
+        section.style.display = 'block';
+    })
 });

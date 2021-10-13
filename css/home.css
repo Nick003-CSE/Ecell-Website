@@ -4,6 +4,15 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+#about,
+#wings,
+#portfolio,
+#ourstar,
+#testimonials,
+#contact-form {
+    display: none;
+}
+
 
 /* global */
 
