@@ -1,7 +1,7 @@
 const nav = document.querySelector('nav');
 const logo = document.querySelector('.logo');
 const logoAside = document.querySelector('.logo-aside');
-const content = document.querySelector('.content');
+const content = document.querySelector('.home-content');
 const gif = document.querySelector('.preload');
 const sections = document.querySelectorAll('section');
 
