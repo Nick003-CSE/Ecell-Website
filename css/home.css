@@ -11,6 +11,7 @@ body {
 #testimonials,
 #contact-form {
     display: none;
+    /* for preloader */
 }
 
 
@@ -22,7 +23,8 @@ body {
     box-sizing: border-box;
 }
 
-#home {
+#home,
+.home-div {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -178,7 +180,8 @@ nav {
 }
 
 @media screen and (max-width:888px) {
-    #home {
+    #home,
+    .home-div {
         flex-direction: column;
     }
     .logo {
