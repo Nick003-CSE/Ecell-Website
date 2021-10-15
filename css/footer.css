@@ -34,7 +34,7 @@
     width: 100%;
     min-width: 334px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .footer-wings {
@@ -44,6 +44,7 @@
 
 .footer-wings a {
     color: #fff;
+    width: max-content;
     padding-bottom: 5px;
     text-decoration: underline;
 }

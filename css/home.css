@@ -9,7 +9,8 @@ body {
 #portfolio,
 #ourstar,
 #testimonials,
-#contact-form {
+#contact-form,
+#footer {
     display: none;
     /* for preloader */
 }

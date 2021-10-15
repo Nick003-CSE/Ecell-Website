@@ -47,5 +47,4 @@ window.addEventListener('load', () => {
     setTimeout(bgShow, 2000);
     setTimeout(navReveal, 2500);
     setTimeout(allowScroll, 3000);
-
 });
