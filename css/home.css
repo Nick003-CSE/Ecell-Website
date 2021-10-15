@@ -23,15 +23,25 @@ body {
     box-sizing: border-box;
 }
 
+section {
+    padding-top: 100px;
+}
+
 #home,
 .home-div {
     position: relative;
     width: 100%;
     height: 100vh;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* background: #fff; */
+}
+
+.home-div {
+    z-index: 0;
 }
 
 img {
@@ -42,11 +52,11 @@ img {
     box-sizing: content-box;
     width: 190px;
     height: 85px;
-    padding: 32px;
+    padding: 48px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    transform: translateX(94%);
+    transform: translateX(84%);
     transition: all 800ms;
 }
 
@@ -81,7 +91,7 @@ img {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    transform: translateY(140%);
+    transform: translateY(80%);
     opacity: 0;
     pointer-events: none;
     transition: all 1s;
@@ -106,6 +116,44 @@ img {
     transition: all 500ms linear;
 }
 
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('/images/ecell-bg.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.background-show {
+    opacity: 1;
+}
+
+.home-explore {
+    padding: 6px 15px;
+    border: 1px solid #010c1e;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.home-explore:hover {
+    background: #010c1e;
+    color: #fff;
+}
+
+.bounce-up {
+    animation: bounce 1s ease-in 1s;
+}
+
 
 /* nav */
 
@@ -114,8 +162,8 @@ nav {
     top: 0;
     width: 100%;
     padding: 20px;
-    outline: 1px solid #000;
-    background: #fff;
+    /* outline: 1px solid #000; */
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,6 +171,15 @@ nav {
     opacity: 0;
     pointer-events: none;
     z-index: 100;
+}
+
+.scrolled {
+    background: #fff;
+    box-shadow: 0 0 16px #70707070;
+}
+
+.close-overlay {
+    display: none;
 }
 
 .nav-mob {
@@ -137,16 +194,13 @@ nav {
     transition: all 500ms;
 }
 
-.fa-bars::before,
-.fa-times::before {
+.nav-mob img {
+    width: auto;
+    height: 40px;
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(32%, -50%);
-}
-
-.nav-show {
-    opacity: 1;
 }
 
 .nav-logo {
@@ -179,6 +233,18 @@ nav {
     color: #fff;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -20px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
 @media screen and (max-width:888px) {
     #home,
     .home-div {
@@ -186,7 +252,7 @@ nav {
     }
     .logo {
         padding-bottom: 48px;
-        transform: translateX(25%);
+        transform: translateX(24%);
     }
     .home-content {
         align-items: center;
@@ -198,21 +264,38 @@ nav {
         font-size: 16px;
     }
     nav {
-        padding: 10px 20px;
+        padding: 15px 20px;
+    }
+    .close-overlay {
+        /* display: block; */
+        position: absolute;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: transparent;
+    }
+    .display {
+        display: block;
     }
     .nav-menu {
         position: absolute;
         top: 84px;
-        right: -170px;
+        right: -280px;
         height: calc(100vh - 104px);
-        width: max-content;
+        width: 250px;
         background: #fff;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        outline: 1px solid #000;
+        /* border: 1px solid #000; */
+        filter: drop-shadow(0 0 16px #70707070);
+        border-radius: 16px;
         padding: 10px;
         transition: all 500ms;
+    }
+    .nav-menu--show {
+        right: 20px;
     }
     .nav-mob {
         display: block;
