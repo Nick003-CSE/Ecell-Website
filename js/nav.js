@@ -33,24 +33,42 @@ navLogo.addEventListener('click', () => {
 });
 about.addEventListener('click', () => {
     aboutSection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
 });
 exploreBtn.addEventListener('click', () => {
     aboutSection.scrollIntoView();
 });
 wing.addEventListener('click', () => {
     wingSection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
 });
 startup.addEventListener('click', () => {
     startupSection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
 });
 gallery.addEventListener('click', () => {
     gallerySection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
 });
 testimonial.addEventListener('click', () => {
     testSection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
 });
 contact.addEventListener('click', () => {
     contactSection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
 });
 
 const homeOptions = {
