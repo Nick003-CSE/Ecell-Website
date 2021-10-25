@@ -22,7 +22,7 @@ const testimonial = document.querySelector('#home > nav > div.nav-menu > span:nt
 const contact = document.querySelector('#home > nav > div.nav-menu > span:nth-child(7)');
 const homeSection = document.querySelector('#home');
 const aboutSection = document.querySelector('#about');
-// const eventSection = document.querySelector('#events');
+const eventSection = document.querySelector('#events');
 const wingSection = document.querySelector('#wings');
 const startupSection = document.querySelector('#ourstar');
 const gallerySection = document.querySelector('#portfolio');
@@ -34,6 +34,12 @@ navLogo.addEventListener('click', () => {
 });
 about.addEventListener('click', () => {
     aboutSection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
+});
+event.addEventListener('click', () => {
+    eventSection.scrollIntoView();
     if (screen.width <= 888) {
         mobileNav();
     }

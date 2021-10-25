@@ -11029,6 +11029,11 @@ textarea.form-control {
     background: #010c1e;
 }
 
+.form-group input[type=submit] {
+    color: #fff;
+    background: #010c1e;
+}
+
 .info-wrap h3 {
     color: #fff;
 }
