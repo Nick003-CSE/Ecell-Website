@@ -7,6 +7,12 @@ const sections = document.querySelectorAll('section');
 const home = document.querySelector('#home');
 const background = document.querySelector('.background');
 const explore = document.querySelector('.home-explore');
+const wave = document.querySelector('.middle');
+const circle1 = document.querySelector('.top');
+const circle2 = document.querySelector('.bottom');
+
+
+scrollTo(0, 0);
 
 const logoReveal = () => {
     logo.style.opacity = '1';
@@ -29,14 +35,16 @@ const navReveal = () => {
 
 const allowScroll = () => {
     document.body.classList.toggle('scroll-none');
-    sections.forEach(section => {
-        section.style.display = 'block';
-    });
+    // sections.forEach(section => {
+    //     section.style.display = 'block';
+    // });
     home.classList.add('home-bg');
 };
 
 const bgShow = () => {
-    background.classList.add('background-show');
+    wave.style.transform = 'translate(-50%, -50%)';
+    circle1.style.width = '300px';
+    circle2.style.width = '350px';
 };
 
 window.addEventListener('load', () => {

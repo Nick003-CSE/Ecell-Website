@@ -4,7 +4,8 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-#about,
+
+/* #about,
 #wings,
 #portfolio,
 #ourstar,
@@ -12,8 +13,8 @@ body {
 #contact-form,
 #footer {
     display: none;
-    /* for preloader */
-}
+    /* for preloader
+} */
 
 
 /* global */
@@ -41,11 +42,6 @@ section {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background: url('/images/bg-home.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* opacity: 0; */
-    /* background: #081743; */
 }
 
 .home-div {
@@ -131,15 +127,37 @@ img {
     top: 0;
     width: 100%;
     height: 100vh;
-    background: url('/images/bg-home.png') no-repeat;
+    background: radial-gradient(#091945 0%, #07143E 32%, #030729 80%, #00001E 100%);
     background-position: center;
     background-size: cover;
-    opacity: 0;
+    overflow-x: hidden;
     transition: all 500ms;
 }
 
-.background-show {
-    opacity: 1;
+.top,
+.middle,
+.bottom {
+    position: absolute;
+    transition: all 1500ms;
+}
+
+.top {
+    top: -120px;
+    left: -120px;
+    width: 0px;
+}
+
+.middle {
+    width: 130%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+.bottom {
+    bottom: -165px;
+    right: -150px;
+    width: 0px;
 }
 
 .home-explore {
@@ -235,8 +253,8 @@ nav {
     margin: 0;
     border: 2px solid #010c1e;
     border-radius: 8px;
-    background: #010c1e;
-    color: #fff;
+    background: #fff;
+    color: #010c1e;
     transition: all 300ms;
 }
 
