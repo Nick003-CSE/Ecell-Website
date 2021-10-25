@@ -4,6 +4,7 @@ const menu = document.querySelector('.nav-menu');
 const mobileNav = () => {
     menu.classList.toggle('nav-menu--show');
     close.classList.toggle('display');
+    document.body.classList.toggle('scroll-none');
 }
 
 open.addEventListener('click', mobileNav);
@@ -80,8 +81,12 @@ const homeObserver = new IntersectionObserver((sections) => {
         // console.log(section.target);
         if (!section.isIntersecting) {
             navBar.classList.add('scrolled');
+            navLogo.src = "images/ecell-logo/e.svg";
+            open.src = "icons/menu-b.png";
         } else {
             navBar.classList.remove('scrolled');
+            navLogo.src = "images/ecell-logo/e-white.svg";
+            open.src = "icons/menu-white.png";
         }
     });
 }, homeOptions);

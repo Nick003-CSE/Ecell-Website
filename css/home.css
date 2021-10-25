@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: Poppins, sans-serif;
 }
 
@@ -40,7 +40,12 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background: #fff; */
+    color: #fff;
+    background: url('/images/bg-home.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0; */
+    /* background: #081743; */
 }
 
 .home-div {
@@ -103,11 +108,13 @@ img {
 .home-content h1 {
     font-size: 32px;
     font-weight: 600;
+    color: #fff;
 }
 
 .home-content p {
     font-size: 18px;
     font-weight: 500;
+    color: #ddd;
 }
 
 .preload {
@@ -124,7 +131,7 @@ img {
     top: 0;
     width: 100%;
     height: 100vh;
-    background: url('/images/ecell-bg.svg') no-repeat;
+    background: url('/images/bg-home.png') no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 0;
@@ -149,8 +156,8 @@ img {
 }
 
 .home-explore {
-    background: #010c1e;
-    color: #fff;
+    background: #fff;
+    color: #010c1e;
 }
 
 .bounce-up {
@@ -178,6 +185,7 @@ nav {
 
 .scrolled {
     background: #fff;
+    color: #000;
     box-shadow: 0 0 16px #70707070;
 }
 
@@ -207,7 +215,7 @@ nav {
 }
 
 .nav-logo {
-    height: 32px;
+    height: 40px;
     width: auto;
 }
 
@@ -246,7 +254,7 @@ nav {
 
 @media (hover) {
     .home-explore {
-        background: transparent;
+        background: #fff;
         color: #000;
     }
     .home-explore:hover {
@@ -254,7 +262,7 @@ nav {
         color: #fff;
     }
     .nav-contact {
-        background: transparent;
+        background: #fff;
         color: #010c1e;
     }
     .nav-contact:hover {
@@ -291,29 +299,34 @@ nav {
         left: 0;
         width: 100%;
         height: 100vh;
-        background: transparent;
+        background: #00000090;
     }
     .display {
         display: block;
     }
     .nav-menu {
         position: absolute;
-        top: 84px;
+        top: 62px;
         right: -280px;
         padding: 16px 0;
         width: 250px;
+        height: 100vh;
         background: #fff;
+        color: #000;
         flex-direction: column;
         align-items: center;
         justify-content: start;
         /* border: 1px solid #000; */
-        filter: drop-shadow(0 0 16px #70707070);
-        border-radius: 16px;
+        filter: drop-shadow(0 24px 16px #70707070);
+        /* border-radius: 16px; */
         padding: 10px;
         transition: all 500ms;
     }
     .nav-menu--show {
-        right: 20px;
+        right: 0px;
+    }
+    .scroll-none {
+        overflow: hidden;
     }
     .nav-mob {
         display: block;

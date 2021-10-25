@@ -1,0 +1,19 @@
+#events {
+    padding: 0 20px;
+}
+
+.eve_head {
+    font-size: 28px;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.eve_container_1,
+.eve_container_2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.eve_card {
+    width: clamp(300px, 400px, 500px);
+}

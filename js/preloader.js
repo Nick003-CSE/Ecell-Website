@@ -28,7 +28,7 @@ const navReveal = () => {
 };
 
 const allowScroll = () => {
-    document.body.style.overflow = 'auto';
+    document.body.classList.toggle('scroll-none');
     sections.forEach(section => {
         section.style.display = 'block';
     });
