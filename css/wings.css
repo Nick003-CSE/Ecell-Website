@@ -37,7 +37,7 @@ a {
 
 .wings__header span {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .wings__card--area {
@@ -101,6 +101,16 @@ a {
 .wings__card--head--logo {
     width: 200px;
     filter: drop-shadow(0 0 1px #69696950);
+}
+
+.wings__card--body h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wings__card--body p {
+    line-height: 1.2em;
+    font-size: 16px;
 }
 
 .wings__card--body--desc {
