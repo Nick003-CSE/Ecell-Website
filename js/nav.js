@@ -19,7 +19,8 @@ const wing = document.querySelector('#home > nav > div.nav-menu > span:nth-child
 const startup = document.querySelector('#home > nav > div.nav-menu > span:nth-child(4)');
 const gallery = document.querySelector('#home > nav > div.nav-menu > span:nth-child(5)');
 const testimonial = document.querySelector('#home > nav > div.nav-menu > span:nth-child(6)');
-const contact = document.querySelector('#home > nav > div.nav-menu > span:nth-child(7)');
+const team = document.querySelector('#home > nav > div.nav-menu > span:nth-child(7)');
+const contact = document.querySelector('#home > nav > div.nav-menu > span:nth-child(8)');
 const homeSection = document.querySelector('#home');
 const aboutSection = document.querySelector('#about');
 const eventSection = document.querySelector('#events');
@@ -28,6 +29,11 @@ const startupSection = document.querySelector('#ourstar');
 const gallerySection = document.querySelector('#portfolio');
 const testSection = document.querySelector('#testimonials');
 const contactSection = document.querySelector('#contact-form');
+
+team.addEventListener('click', e => {
+    e.preventDefault();
+    window.location = "Teams/index.html";
+})
 
 navLogo.addEventListener('click', () => {
     homeSection.scrollIntoView();

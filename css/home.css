@@ -302,7 +302,7 @@ nav {
     }
 }
 
-@media screen and (max-width:888px) {
+@media screen and (max-width:912px) {
     #home,
     .home-div {
         flex-direction: column;
