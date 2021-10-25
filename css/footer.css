@@ -32,7 +32,6 @@
 
 .footer-links {
     width: 100%;
-    min-width: 334px;
     display: flex;
     justify-content: center;
 }

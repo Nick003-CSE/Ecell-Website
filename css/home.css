@@ -148,10 +148,10 @@ img {
 }
 
 .middle {
-    top: 40%;
+    top: 50%;
     left: -15%;
     width: 130%;
-    transform: rotateX(90deg);
+    transform: translateY(-50%) rotateX(90deg);
 }
 
 .wave-show {
@@ -160,10 +160,10 @@ img {
 
 @keyframes wave-show {
     from {
-        transform: rotateX(90deg);
+        transform: translateY(-50%) rotateX(90deg);
     }
     to {
-        transform: rotateX(0);
+        transform: translateY(-50%) rotateX(0);
     }
 }
 
