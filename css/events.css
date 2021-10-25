@@ -37,6 +37,7 @@
 
 .eve_card img {
     width: 100%;
+    transition: all 400ms;
 }
 
 .eve_card h2 {
@@ -56,5 +57,11 @@
 @media screen and (max-width:768px) {
     .eve_card {
         margin: 40px 0;
+    }
+}
+
+@media (hover) {
+    .eve_card:hover img {
+        transform: scale(0.9);
     }
 }
