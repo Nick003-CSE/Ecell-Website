@@ -32,7 +32,7 @@ const contactSection = document.querySelector('#contact-form');
 
 team.addEventListener('click', e => {
     e.preventDefault();
-    window.location = "Teams/index.html";
+    window.location = "team/index.html";
 })
 
 navLogo.addEventListener('click', () => {
