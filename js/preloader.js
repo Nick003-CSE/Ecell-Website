@@ -42,7 +42,7 @@ const allowScroll = () => {
 };
 
 const bgShow = () => {
-    wave.style.transform = 'translate(-50%, -50%)';
+    wave.classList.toggle('wave-show');
     circle1.style.width = '300px';
     circle2.style.width = '350px';
 };
