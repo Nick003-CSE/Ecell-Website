@@ -1,26 +1,45 @@
-var index = 1;
-showSlides(index);
+const container = document.querySelector('.container-gallery');
+const numberText = document.querySelector('.numbertext');
+const next = document.querySelector('.next');
+const previous = document.querySelector('.previous');
+// console.log(next);
+// console.log(previous);
 
-function photoNumber(n) {
-  showSlides(index += n);
-}
 
-function current(n) {
-  showSlides(index = n);
-}
+const photos = document.querySelectorAll('.photos');
+// console.log(photos);
+photos[0].classList.toggle('active');
+let pact = 0;
+const totalImg = photos.length;
+// console.log(pact);
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("photos");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {index = 1}    
-  if (n < 1) {index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[index-1].style.display = "block";  
-  dots[index-1].className += " active";
-}
+const updateCounter = () => {
+    numberText.innerHTML = `${pact+1} / ${totalImg}`;
+};
+updateCounter();
+
+// console.log(numberText.innerHTML);
+
+
+next.addEventListener('click', () => {
+    photos.item(pact).classList.toggle('active');
+    pact = pact + 1 === totalImg ? 0 : pact + 1;
+    photos.item(pact % totalImg).classList.toggle('active');
+    updateCounter();
+});
+
+previous.addEventListener('click', () => {
+    photos.item(pact).classList.toggle('active');
+    pact = pact === 0 ? 28 : pact - 1;
+    photos.item(pact % totalImg).classList.toggle('active');
+    updateCounter();
+});
+
+const slideShow = () => {
+    photos.item(pact).classList.toggle('active');
+    pact = pact + 1 === totalImg ? 0 : pact + 1;
+    photos.item(pact % totalImg).classList.toggle('active');
+    updateCounter();
+};
+
+setInterval(slideShow, 5000);

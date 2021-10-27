@@ -221,49 +221,24 @@
                     <h3 class="section-title text-center" data-aos="fade-up" data-aos-offset="300">Gallery</h3>
 
                     <div class="container-gallery mx-auto my-5">
-                        <div class="photos">
-                            <div class="numbertext">1 / 5</div>
-                            <img src="https://source.unsplash.com/1600x900/?nature,rain" style="width:100%">
-                        </div>
-
-                        <div class="photos">
-                            <div class="numbertext">2 / 5</div>
-                            <img src="https://source.unsplash.com/1600x900/?nature,water" style="width:100%">
-                        </div>
-
-                        <div class="photos">
-                            <div class="numbertext">3 / 5</div>
-                            <img src="https://source.unsplash.com/1600x900/?nature,forest" style="width:100%">
-                        </div>
-
-                        <div class="photos">
-                            <div class="numbertext">4 / 5</div>
-                            <img src="https://source.unsplash.com/1600x900/?nature,forest" style="width:100%">
-                        </div>
-
-                        <div class="photos">
-                            <div class="numbertext">5 / 5</div>
-                            <img src="https://source.unsplash.com/1600x900/?nature,rain" style="width:100%">
-                        </div>
-
-
-                        <a class="previous" onclick="photoNumber(-1)">&#10094;</a>
-                        <a class="next " onclick="photoNumber(1)">&#10095;</a>
-
-                    </div>
-                    <br>
-
-                    <div style="text-align:center ">
-                        <span class="dot " onclick="current(1) "></span>
-                        <span class="dot " onclick="current(2) "></span>
-                        <span class="dot " onclick="current(3) "></span>
-                        <span class="dot " onclick="current(4) "></span>
-                        <span class="dot " onclick="current(5) "></span>
+                        <span class="previous">&#10094;</span>
+                        <span class="next">&#10095;</span>
+                        <span class="numbertext">1 / 30</span>
                     </div>
                 </div>
             </div>
             <!-- end row section-intro -->
-
+            <script>
+                const cont = document.querySelector('.container-gallery');
+                const loadGallery = () => {
+                    for (let i = 1; i < 30; i++) {
+                        cont.innerHTML += `<div class="photos">
+                            <img src="/images/gallery/${i}.JPG">
+                        </div>`;
+                    }
+                };
+                loadGallery();
+            </script>
         </div>
     </section>
     <!-- gallery end -->
