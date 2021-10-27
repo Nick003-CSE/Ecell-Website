@@ -349,3 +349,9 @@ nav {
         align-self: center;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .about-p {
+        text-align: center;
+    }
+}
