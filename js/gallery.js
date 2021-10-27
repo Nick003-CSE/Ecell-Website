@@ -1,3 +1,4 @@
+const galleryS = document.querySelector('#portfolio');
 const container = document.querySelector('.container-gallery');
 const numberText = document.querySelector('.numbertext');
 const next = document.querySelector('.next');
@@ -42,4 +43,18 @@ const slideShow = () => {
     updateCounter();
 };
 
-setInterval(slideShow, 5000);
+const galleryOptions = {
+    rootMargin: "-50% 0px 0px 0px"
+};
+let autoScroll;
+const galleryObserver = new IntersectionObserver((sections) => {
+    sections.forEach(section => {
+        if (section.isIntersecting) {
+            autoScroll = setInterval(slideShow, 3000);
+        } else {
+            clearInterval(autoScroll);
+        }
+    });
+}, galleryOptions);
+
+galleryObserver.observe(galleryS);
