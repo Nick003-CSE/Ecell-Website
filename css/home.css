@@ -30,6 +30,16 @@ section {
     padding-top: 100px;
 }
 
+#home {
+    /* background: radial-gradient(#091945 0%, #07143E 32%, #030729 80%, #00001E 100%); */
+    background: #000;
+    transition: all 1500ms;
+}
+
+.no-bg {
+    background: transparent;
+}
+
 #home,
 .home-div {
     position: relative;
@@ -127,44 +137,18 @@ img {
     top: 0;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(#091945 0%, #07143E 32%, #030729 80%, #00001E 100%);
+    /* background: radial-gradient(#091945 0%, #07143E 32%, #030729 80%, #00001E 100%); */
     overflow: hidden;
-    transition: all 500ms;
-    display: grid;
-    place-content: center;
+    transition: all 1000ms;
+    opacity: 0;
+    background: url(/images/background/final_bg.png) no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.top,
-.middle,
-.bottom {
-    position: absolute;
-    transition: all 1500ms;
-}
-
-.top {
-    top: -120px;
-    left: -120px;
-    width: 0px;
-}
-
-.middle {
-    top: 50%;
-    left: -15%;
-    width: 130%;
-    transform: translateY(-50%) rotateX(90deg);
-}
-
-.wave-show {
-    animation: wave-show 1500ms 1 forwards;
-}
-
-@keyframes wave-show {
-    from {
-        transform: translateY(-50%) rotateX(90deg);
-    }
-    to {
-        transform: translateY(-50%) rotateX(0);
-    }
+.background img {
+    width: 100%;
+    height: 100%;
 }
 
 .bottom {
@@ -326,7 +310,7 @@ nav {
     .close-overlay {
         /* display: block; */
         position: absolute;
-        top: 62px;
+        top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
@@ -337,7 +321,7 @@ nav {
     }
     .nav-menu {
         position: absolute;
-        top: 62px;
+        top: 0;
         right: -280px;
         padding: 16px 0;
         width: 250px;
@@ -346,12 +330,13 @@ nav {
         color: #000;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
         /* border: 1px solid #000; */
         filter: drop-shadow(0 24px 16px #70707070);
         /* border-radius: 16px; */
         padding: 10px;
         transition: all 500ms;
+        z-index: 20;
     }
     .nav-menu--show {
         right: 0px;
@@ -362,5 +347,11 @@ nav {
     .nav-mob {
         display: block;
         align-self: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-p {
+        text-align: center;
     }
 }
