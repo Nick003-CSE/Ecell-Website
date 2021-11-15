@@ -6,9 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#ourstar {
+
+/* #ourstar {
     background: #111111;
-}
+} */
 
 .making {
     display: flex;
@@ -18,7 +19,7 @@
 
 .st {
     text-align: center;
-    color: azure;
+    color: #000;
     font-size: 28px;
     padding: 10px;
 }
@@ -35,6 +36,7 @@
     justify-content: center;
     border-radius: 20px;
     transition: 0.5s;
+    border: none;
 }
 
 .card .circle {

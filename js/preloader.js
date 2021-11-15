@@ -7,9 +7,6 @@ const sections = document.querySelectorAll('section');
 const home = document.querySelector('#home');
 const background = document.querySelector('.background');
 const explore = document.querySelector('.home-explore');
-const wave = document.querySelector('.middle');
-const circle1 = document.querySelector('.top');
-const circle2 = document.querySelector('.bottom');
 
 
 scrollTo(0, 0);
@@ -42,9 +39,9 @@ const allowScroll = () => {
 };
 
 const bgShow = () => {
-    wave.classList.toggle('wave-show');
-    circle1.style.width = '300px';
-    circle2.style.width = '350px';
+    background.style.opacity = '1';
+    // home.style.background = 'transparent';
+    home.classList.add('no-bg');
 };
 
 window.addEventListener('load', () => {
