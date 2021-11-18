@@ -70,10 +70,10 @@ a {
     position: absolute;
     padding: 10px;
     border-radius: 16px;
-    width: calc(100% - 32px);
-    height: calc(100% - 32px);
+    /* width: calc(100% - 32px);
+    height: calc(100% - 32px); */
     top: -400px;
-    left: 16px;
+    left: 0px;
     transition: all 500ms;
     /* padding: 16px; */
 }
@@ -161,7 +161,7 @@ a {
 }
 
 .wings--interno {
-    background: limegreen;
+    background: #32cd32;
 }
 
 .wings--satt {
@@ -196,11 +196,38 @@ a {
 }
 
 .wings__card:hover .wings__card--body {
-    top: 16px;
+    top: 0;
     transition-delay: 300ms;
 }
 
 .wings__card:hover .wings__card--head--name::after {
     transition-delay: 700ms;
     transform: scaleX(1);
+}
+
+.btn-east {
+    border-color: #f00 !important;
+}
+
+.btn-east:hover {
+    background: #f00;
+    color: #fff;
+}
+
+.btn-interno {
+    border-color: #32cd32 !important;
+}
+
+.btn-interno:hover {
+    background: #32cd32;
+    color: #fff;
+}
+
+.btn-satt {
+    border-color: #FEFD45 !important;
+}
+
+.btn-satt:hover {
+    background: #FEFD45;
+    color: #343a40;
 }
