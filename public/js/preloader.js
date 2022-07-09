@@ -11,6 +11,8 @@ const explore = document.querySelector('.home-explore');
 
 scrollTo(0, 0);
 
+document.body.style.overflow = 'hidden'
+
 const logoReveal = () => {
     logo.style.opacity = '1';
     logo.style.transform = 'translateX(0)';
@@ -47,6 +49,7 @@ const bgShow = () => {
 window.addEventListener('load', () => {
     gif.style.opacity = '0';
     gif.style.pointerEvents = 'none';
+    document.body.style.overflow = 'auto'
     logoReveal();
     setTimeout(contentReveal, 1000);
     setTimeout(bgShow, 2000);
