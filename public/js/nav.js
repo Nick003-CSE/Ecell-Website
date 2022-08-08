@@ -14,15 +14,17 @@ close.addEventListener('click', mobileNav);
 const navLogo = document.querySelector('.nav-logo');
 const exploreBtn = document.querySelector('.home-explore');
 const about = document.querySelector('#home > nav > div.nav-menu > span:nth-child(1)');
-const event = document.querySelector('#home > nav > div.nav-menu > span:nth-child(2)');
-const wing = document.querySelector('#home > nav > div.nav-menu > span:nth-child(3)');
-const gallery = document.querySelector('#home > nav > div.nav-menu > span:nth-child(4)');
-const startup = document.querySelector('#home > nav > div.nav-menu > span:nth-child(5)');
-const testimonial = document.querySelector('#home > nav > div.nav-menu > span:nth-child(6)');
-const team = document.querySelector('#home > nav > div.nav-menu > span:nth-child(7)');
-const contact = document.querySelector('#home > nav > div.nav-menu > span:nth-child(8)');
+const upcomingEvent = document.querySelector('#home > nav > div.nav-menu > span:nth-child(2)');
+const event = document.querySelector('#home > nav > div.nav-menu > span:nth-child(3)');
+const wing = document.querySelector('#home > nav > div.nav-menu > span:nth-child(4)');
+const gallery = document.querySelector('#home > nav > div.nav-menu > span:nth-child(5)');
+const startup = document.querySelector('#home > nav > div.nav-menu > span:nth-child(6)');
+const testimonial = document.querySelector('#home > nav > div.nav-menu > span:nth-child(7)');
+const team = document.querySelector('#home > nav > div.nav-menu > span:nth-child(8)');
+const contact = document.querySelector('#home > nav > div.nav-menu > span:nth-child(9)');
 const homeSection = document.querySelector('#home');
 const aboutSection = document.querySelector('#about');
+const upcomingEventSection = document.querySelector('#upcomingEvents');
 const eventSection = document.querySelector('#events');
 const wingSection = document.querySelector('#wings');
 const startupSection = document.querySelector('#ourstar');
@@ -40,6 +42,12 @@ navLogo.addEventListener('click', () => {
 });
 about.addEventListener('click', () => {
     aboutSection.scrollIntoView();
+    if (screen.width <= 888) {
+        mobileNav();
+    }
+});
+upcomingEvent.addEventListener('click', () => {
+    upcomingEventSection.scrollIntoView();
     if (screen.width <= 888) {
         mobileNav();
     }
