@@ -734,7 +734,7 @@ section {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #e82d2d;
+  background: #cc1616;
 }
 
 .services .icon-box:hover h4 a,
@@ -954,122 +954,240 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# Wings
 --------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #f9f9f9;
-  text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
+a {
+  text-decoration: none;
 }
 
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #191919;
+#wings {
+  width: 100%;
+  /* min-height: 100vh; */
+  padding: 80px 0;
+  /* background: #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.pricing .box h4 {
-  font-size: 42px;
-  color: #cc1616;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing .box ul {
+#wings p,
+#wings span {
+  margin: 0;
   padding: 0;
-  list-style: none;
-  color: #191919;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
+  line-height: normal;
 }
 
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #cc1616;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .box .btn-buy {
-  background: #cc1616;
-  display: inline-block;
-  padding: 10px 40px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
+#wings p {
+  font-family: sans-serif;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
+  font-size: 1.1em;
 }
 
-.pricing .box .btn-buy:hover {
-  background: #e82d2d;
-}
-
-.pricing .featured {
-  background: #cc1616;
-  box-shadow: none;
-  color: #fff;
-}
-
-.pricing .featured h3,
-.pricing .featured h4,
-.pricing .featured ul,
-.pricing .featured ul li,
-.pricing .featured ul .na {
-  color: #fff;
-}
-
-.pricing .featured h4 span {
-  color: rgba(255, 255, 255, 0.58);
-}
-
-.pricing .featured .btn-wrap {
-  padding: 15px;
+.wings__header {
   text-align: center;
+  padding: 20px;
 }
 
-.pricing .featured .btn-buy {
-  background: rgba(255, 255, 255, 0.2);
+.wings__header h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
 }
 
-.pricing .featured .btn-buy:hover {
+.wings__header span {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.wings__card--area {
+  width: 100%;
+  height: 100%;
+  /* padding: 0 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wings__card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #eee;
+  box-shadow: 3px 3px 16px #69696969;
+  margin: 40px 20px;
+  padding: 10px;
+  transition: all 400ms;
+  border-radius: 16px;
+  /* border: 1px solid #fff; */
+  overflow: hidden;
+  /* margin-bottom: 40px; */
+}
+
+.wings__card--body {
   background: #fff;
-  color: #cc1616;
+  position: absolute;
+  padding: 10px;
+  border-radius: 16px;
+  /* width: calc(100% - 32px);
+  height: calc(100% - 32px); */
+  top: -400px;
+  left: 0px;
+  transition: all 500ms;
+  /* padding: 16px; */
+}
+
+.wings__card--body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.wings__card--head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms;
+}
+
+.wings__card--head--logo {
+  width: 200px;
+  filter: drop-shadow(0 0 1px #69696950);
+}
+
+.wings__card--body h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.wings__card--body p {
+  line-height: 1.2em;
+  font-size: 16px;
+}
+
+.wings__card--body--desc {
+  /* padding: 5px; */
+  line-height: 1.2em;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.wings__card--head--name {
+  /* padding: 5px; */
+  margin-bottom: 24px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  transition: all 400ms;
+}
+
+.wings__card--head--name::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #aaa;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  transition: all 300ms;
+}
+
+
+/* .wings__card--curtain {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  transform-origin: 50% 0;
+  transition: all 500ms;
+  transform: scaleY(0);
+} */
+
+.wings--east {
+  background: #f00;
+}
+
+.wings--interno {
+  background: #32cd32;
+}
+
+.wings--satt {
+  background: #FEFD45;
+}
+
+.wings__card--body--icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wings__social--icons {
+  /* padding: 7px; */
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background: #eee;
+  color: #000;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.wings__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 16px #69696990;
+}
+
+.wings__card:hover .wings__card--head {
+  transform: translateY(400px);
+}
+
+.wings__card:hover .wings__card--body {
+  top: 0;
+  transition-delay: 300ms;
+}
+
+.wings__card:hover .wings__card--head--name::after {
+  transition-delay: 700ms;
+  transform: scaleX(1);
+}
+
+.btn-east {
+  border-color: #f00 !important;
+}
+
+.btn-east:hover {
+  background: #f00;
+  color: #fff;
+}
+
+.btn-interno {
+  border-color: #32cd32 !important;
+}
+
+.btn-interno:hover {
+  background: #32cd32;
+  color: #fff;
+}
+
+.btn-satt {
+  border-color: #FEFD45 !important;
+}
+
+.btn-satt:hover {
+  background: #FEFD45;
+  color: #343a40;
 }
 
 /*--------------------------------------------------------------
