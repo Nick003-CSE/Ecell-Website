@@ -429,6 +429,13 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.position-relative .logo-burla{
+  height:15%;
+  width:15%;
+  margin-bottom: 10px;
+}
+
+
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
@@ -589,6 +596,13 @@ section {
   margin-bottom: 0;
   font-size: 21px;
 }
+
+@media (max-width: 768px) {
+  .about .content p:last-child {
+    text-align: center;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Why Us
